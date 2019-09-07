@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "37a981d7-b234-408a-af80-5fdb34e58383",
+            "Value": {
+                "id": "848240ef-bfc7-4415-9d13-78bb52d01ca6",
+                "resourcePath": "scripts\\LogWarning\\LogWarning.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "37ad35db-0e28-4c73-9d43-0ef38c4fab1e",
             "Value": {
                 "id": "1088329e-090e-4611-90de-96ab1a86b111",
@@ -263,6 +271,14 @@
             }
         },
         {
+            "Key": "a1ef8bf1-fea2-4319-99dd-32a2979df9e0",
+            "Value": {
+                "id": "5fca5327-6c9a-44ec-b5eb-6201783b9e2a",
+                "resourcePath": "scripts\\gui_addEventHandler\\gui_addEventHandler.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "af44f2fb-99b2-4669-93eb-04553648adc0",
             "Value": {
                 "id": "790f49eb-520c-404a-9cfc-37b0512dd8e1",
@@ -308,6 +324,14 @@
                 "id": "54a754e6-937b-4088-a7a5-0f1181118691",
                 "resourcePath": "views\\bbe52a1e-aade-4d63-a394-8cc0809e1b80.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c03da28c-2a77-4367-a10f-febd9e602a34",
+            "Value": {
+                "id": "ef4649c4-9e72-4b8c-a6ca-4d6cbb5d7270",
+                "resourcePath": "scripts\\gui_constants\\gui_constants.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -380,6 +404,14 @@
                 "id": "a2898177-e4cd-492e-8df2-1b046a7442e4",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e8792f78-5db9-455e-9346-d1d23286d8a4",
+            "Value": {
+                "id": "c3672f8a-db02-410b-b500-83741c60e91c",
+                "resourcePath": "scripts\\checkBox1_evHandler\\checkBox1_evHandler.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -471,6 +503,14 @@
             }
         },
         {
+            "Key": "fd1ca286-c477-4fcd-b24e-59b436e9fa0b",
+            "Value": {
+                "id": "7077bd71-3a54-47ff-98ac-08bbb6891ae3",
+                "resourcePath": "scripts\\slider_evHandler\\slider_evHandler.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fd41c3ab-2b85-4091-b655-9cd31386a109",
             "Value": {
                 "id": "feac762a-2fa7-47e3-a603-dc31a050f847",
@@ -490,10 +530,15 @@
         "ce20b006-154a-48e3-8a27-bb20a38e8b3d",
         "792977a5-5371-4d98-a51b-4cc8da402e90",
         "734856ff-7d55-4271-ad16-f1516c85720a",
+        "a1ef8bf1-fea2-4319-99dd-32a2979df9e0",
+        "c03da28c-2a77-4367-a10f-febd9e602a34",
         "14d841e7-13ea-4a16-b4b4-4ec8170250f8",
+        "e8792f78-5db9-455e-9346-d1d23286d8a4",
+        "fd1ca286-c477-4fcd-b24e-59b436e9fa0b",
         "ebfed057-a42b-4334-9755-2de1c2b5baf7",
         "51e6acf3-b432-4b9f-9ff4-208c2766a4f9",
-        "90d52d5f-c262-42e5-9acb-634fd40d8d8a"
+        "90d52d5f-c262-42e5-9acb-634fd40d8d8a",
+        "37a981d7-b234-408a-af80-5fdb34e58383"
     ],
     "tutorial": ""
 }

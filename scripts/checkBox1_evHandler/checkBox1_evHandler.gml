@@ -1,0 +1,1 @@
+Log("checkBox state: " +string(argument0.state));

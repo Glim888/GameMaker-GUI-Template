@@ -1,0 +1,1 @@
+Log(argument0.value);
