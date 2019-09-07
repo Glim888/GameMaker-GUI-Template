@@ -10,3 +10,7 @@ gui_panel_addImage(_panel, 400, 300, spr_button_exit)
 gui_image_create(20, 20, spr_ats_stone32);
 gui_button_create(500, 50, spr_button_exit, undefined);
 gui_label_create(400, 200, "Hello World ihr MOFUS", font_32);
+
+
+gui_checkBox_create(600, 70, "Test", font_32, c_black, true);
+gui_slider_create(599, 400, 0, 100, "Hello World", 25, font_32, c_red);

@@ -14,3 +14,5 @@ slideOutFlag = false;
 panelLabel = ds_list_create();
 panelButton = ds_list_create();
 panelImage = ds_list_create();
+panelSlider = ds_list_create();
+panelCheckbox = ds_list_create();

@@ -95,10 +95,34 @@
             }
         },
         {
+            "Key": "3544a335-7734-4b3f-ad6f-a2237f8a0d9f",
+            "Value": {
+                "id": "23b5fc89-6fe2-4f5a-bfca-3c6039f7fb2c",
+                "resourcePath": "sprites\\spr_gui_checkBox\\spr_gui_checkBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "37ad35db-0e28-4c73-9d43-0ef38c4fab1e",
+            "Value": {
+                "id": "1088329e-090e-4611-90de-96ab1a86b111",
+                "resourcePath": "sprites\\spr_gui_slider\\spr_gui_slider.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3fcbe0e8-1853-45e0-b01f-11d43eaae961",
             "Value": {
                 "id": "f9c9bead-4dd6-4db0-8a93-e8ac8523960d",
                 "resourcePath": "scripts\\gui_image_create\\gui_image_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "51e6acf3-b432-4b9f-9ff4-208c2766a4f9",
+            "Value": {
+                "id": "e3909709-0435-420d-bb7b-6b553fdc5f28",
+                "resourcePath": "scripts\\draw_rCenter\\draw_rCenter.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -167,6 +191,14 @@
             }
         },
         {
+            "Key": "792977a5-5371-4d98-a51b-4cc8da402e90",
+            "Value": {
+                "id": "70a445dd-ef9f-49ec-8300-ccd80d7c9f7a",
+                "resourcePath": "scripts\\gui_checkBox_create\\gui_checkBox_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "82977de2-afbb-496d-93cb-cd27c8532087",
             "Value": {
                 "id": "0ebfeded-5f1d-4600-ab55-450a01485049",
@@ -191,6 +223,14 @@
             }
         },
         {
+            "Key": "87ba3e2c-69a7-4afc-8f21-220f8d404264",
+            "Value": {
+                "id": "e75abe87-d563-4744-9cf6-ddb5db7dbd6f",
+                "resourcePath": "objects\\obj_gui_slider\\obj_gui_slider.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8b24b74c-937e-41bb-af8c-5995e8415ddf",
             "Value": {
                 "id": "948e4e28-b2bf-4c43-a86c-9abc2308196c",
@@ -207,6 +247,14 @@
             }
         },
         {
+            "Key": "90d52d5f-c262-42e5-9acb-634fd40d8d8a",
+            "Value": {
+                "id": "31714af0-f48a-4e44-80a0-4c6ab2f280a6",
+                "resourcePath": "scripts\\draw_sCenter\\draw_sCenter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "93566aad-c3b3-48a9-8fa7-9c5ee19f74ac",
             "Value": {
                 "id": "0de4ef12-9651-48b7-b48b-45171d407c73",
@@ -220,6 +268,14 @@
                 "id": "aed6403c-396c-4ae2-99bc-33da7f6bf851",
                 "resourcePath": "views\\98fea02a-3d9c-4e7c-9cf3-9e4621e55fc9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9ef9cd11-204b-4407-a195-16c18086de8d",
+            "Value": {
+                "id": "59bd6860-2424-49c4-b909-052164968802",
+                "resourcePath": "sprites\\spr_gui_knob\\spr_gui_knob.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -295,6 +351,14 @@
             }
         },
         {
+            "Key": "ce20b006-154a-48e3-8a27-bb20a38e8b3d",
+            "Value": {
+                "id": "ad9b34fa-1a6b-4288-8b61-e5e19d59e2d0",
+                "resourcePath": "scripts\\gui_slider_create\\gui_slider_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cf9614a1-6945-44d4-800b-885b8830e767",
             "Value": {
                 "id": "de176fbb-a9a2-4abe-96eb-53cdc8cfb428",
@@ -307,6 +371,14 @@
             "Value": {
                 "id": "e6ff9345-46ef-4622-8835-a260139d37a9",
                 "resourcePath": "scripts\\gui_init\\gui_init.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "daa91839-e202-47ba-8da4-fafb64bb9f8a",
+            "Value": {
+                "id": "8df86e7a-afef-4527-819e-8c871c4262ea",
+                "resourcePath": "scripts\\gui_panel_addCheckbox\\gui_panel_addCheckbox.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -407,6 +479,14 @@
             }
         },
         {
+            "Key": "fc51463b-e8c0-4b94-baa4-41e87a1043f2",
+            "Value": {
+                "id": "ec51f668-ebaf-4fb8-a461-697cfd837b2f",
+                "resourcePath": "objects\\obj_gui_checkBox\\obj_gui_checkBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fcc1c7cf-ab39-4dda-bde7-fa9ac7ce4a58",
             "Value": {
                 "id": "72debc59-6018-437c-a1db-bda6d600b5bf",
@@ -432,10 +512,15 @@
         "8b24b74c-937e-41bb-af8c-5995e8415ddf",
         "70cf9607-5d43-4b0f-8895-54072bcd8e3e",
         "8319fef8-049f-4af7-a3bb-ecfad4570d2c",
+        "daa91839-e202-47ba-8da4-fafb64bb9f8a",
         "e14c8104-1c59-4b8b-a421-f32912d611d2",
         "3fcbe0e8-1853-45e0-b01f-11d43eaae961",
         "cbc877ce-77eb-48db-9a64-2ef735070421",
-        "129e8938-a4a1-42df-bd55-e75168a35931"
+        "129e8938-a4a1-42df-bd55-e75168a35931",
+        "ce20b006-154a-48e3-8a27-bb20a38e8b3d",
+        "51e6acf3-b432-4b9f-9ff4-208c2766a4f9",
+        "90d52d5f-c262-42e5-9acb-634fd40d8d8a",
+        "792977a5-5371-4d98-a51b-4cc8da402e90"
     ],
     "tutorial": ""
 }
