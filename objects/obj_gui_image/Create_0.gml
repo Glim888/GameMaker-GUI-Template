@@ -1,0 +1,3 @@
+/// @desc
+
+sprite = noone;
