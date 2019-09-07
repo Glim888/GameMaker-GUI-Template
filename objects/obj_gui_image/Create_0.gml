@@ -1,3 +1,5 @@
 /// @desc
 
-sprite = noone;
+event_inherited();
+
+sprite = 0;

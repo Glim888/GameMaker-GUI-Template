@@ -1,9 +1,12 @@
 /// @desc
-	
+
+event_inherited();
+
 title = "";
 titleFont = 0;
 titleColor = 0;
 state = 0;
+
 defaultFont = draw_get_font();
 width = sprite_get_width(spr_gui_checkBox);
 

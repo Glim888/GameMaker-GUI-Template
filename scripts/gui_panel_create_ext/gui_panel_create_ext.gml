@@ -6,7 +6,6 @@
 /// @param speed
 /// @param width
 /// @param height
-/// @param alpha
 /// @param color
 /// @param colorBorder
 /// @return panel
@@ -19,9 +18,8 @@ with (_panel) {
 	panelSpeed = argument4;
 	panelWidth = argument5;
 	panelHeight = argument6;
-	panelAlpha = argument7;
-	panelCol = argument8;
-	panelBorderCol = argument9;
+	panelCol = argument7;
+	panelBorderCol = argument8;
 }
 
 return _panel;
