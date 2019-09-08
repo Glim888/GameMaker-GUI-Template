@@ -1,6 +1,15 @@
 /// @desc
 
-// slide out
+
+if (panelActive) {
+	panelDestX = activePosX
+	panelDestY = activePosY;
+}else{
+	panelDestX = inactivePosX;
+	panelDestY = inactivePosY;
+}
+
+// outside room -> destroy self
 if (slideOutFlag && 
 	x-panelWidth*0.5 > display_get_gui_width() ||
 	x+panelWidth*0.5 < 0||
