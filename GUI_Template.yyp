@@ -223,6 +223,22 @@
             }
         },
         {
+            "Key": "74141f2b-86d8-4da8-9800-6b37c87aab10",
+            "Value": {
+                "id": "2b39a484-5e58-4620-9429-ac520110d884",
+                "resourcePath": "views\\74141f2b-86d8-4da8-9800-6b37c87aab10.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "74169e1c-5760-4a1d-8426-288c5a7f6a72",
+            "Value": {
+                "id": "4b8c58ff-7cb6-4e95-a6e1-5eed64bb6597",
+                "resourcePath": "objects\\obj_gui_checkMouseOverGui\\obj_gui_checkMouseOverGui.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "792977a5-5371-4d98-a51b-4cc8da402e90",
             "Value": {
                 "id": "70a445dd-ef9f-49ec-8300-ccd80d7c9f7a",

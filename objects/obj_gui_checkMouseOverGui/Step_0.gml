@@ -1,0 +1,3 @@
+/// @desc
+
+Log(global.mouseOverGuiElement);
