@@ -1,5 +1,6 @@
 /// @desc
 
+
 if (active) {
 	draw_sprite(sprite, 0, x, y);
 }else{
@@ -7,3 +8,5 @@ if (active) {
 	draw_sprite(sprite, 0, x, y);
 	draw_set_alpha(1);
 }
+
+

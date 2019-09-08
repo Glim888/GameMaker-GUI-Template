@@ -1,1 +1,1 @@
-global.panel.active = !global.panel.active;
+global.settingsPanel.active = !global.settingsPanel.active;

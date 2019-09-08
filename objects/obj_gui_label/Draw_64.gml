@@ -1,5 +1,7 @@
 /// @desc
 
+draw_sCenter();
+
 if (active) {
 		
 	draw_set_font(font);
@@ -16,4 +18,5 @@ if (active) {
 	
 }
 
+draw_rCenter();
 

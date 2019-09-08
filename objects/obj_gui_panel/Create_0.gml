@@ -2,7 +2,7 @@
 
 event_inherited();
 
-panelTitle = "Panel 1";
+panelTitle = "Panel";
 panelSurf = noone;
 panelSpeed = 0;
 inactivePos = [0, 0];

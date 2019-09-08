@@ -1,5 +1,6 @@
 /// @desc
 
+draw_sCenter();
 if (active) {
 	
 	draw_sprite(spr_gui_textfield, 0, x, y);
@@ -25,6 +26,6 @@ if (active) {
 	draw_set_alpha(1);
 	
 }
-
+draw_rCenter();
 
 

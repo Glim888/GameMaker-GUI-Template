@@ -37,8 +37,8 @@ y += (panelDestPos[1] - y) *panelSpeed;
 
 // change position of components relative to panel position
 var _comp;
-var _panX = x - panelWidth*0.5;
-var _panY = y - panelHeight*0.5;
+var _panX = x; // - panelWidth*0.5;
+var _panY = y ;//- panelHeight*0.5;
 for (var _i=0; _i<ds_list_size(panelComponents); _i++) {
 	_comp = panelComponents[| _i];
 

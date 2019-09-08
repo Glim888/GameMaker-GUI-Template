@@ -10,6 +10,7 @@
 /// @param colorBorderLeft
 /// @param colorBorderRight
 /// @param active
+/// @param title
 /// @return panel
 
 var _panel = instance_create_layer(argument2, argument3, global.guiLayer, obj_gui_panel);
@@ -24,6 +25,7 @@ with (_panel) {
 	panelBorderColL = argument8;
 	panelBorderColR = argument9;
 	active = argument10;
+	panelTitle = argument11;
 	
 	var _button = gui_button_create(0, 0, spr_gui_exit, 1);
 	gui_addEventHandler(_button, eventHandler_t.onRelease, buttonPanelExit_onReleased);
