@@ -22,7 +22,7 @@ with (_panel) {
 	panelHeight = argument6;
 	panelCol = argument7;
 	panelBorderCol = argument8;
-	panelActive = argument9;
+	active = argument9;
 }
 
 return _panel;

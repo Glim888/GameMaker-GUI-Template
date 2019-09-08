@@ -1,6 +1,7 @@
 /// @desc
 
 myPanel = noone;
+active = true;
 
 // Eventhandler
 onRelease = noone; // mouse release

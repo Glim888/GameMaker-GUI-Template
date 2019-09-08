@@ -1,3 +1,3 @@
 
 
-with (argument0) myPanel.panelActive = false;
+with (argument0) myPanel.active = false;

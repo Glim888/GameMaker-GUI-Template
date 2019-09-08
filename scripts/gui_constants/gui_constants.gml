@@ -7,3 +7,5 @@ enum eventHandler_t{
 	onRelease,
 
 };
+
+#macro GUI_INACTIVE_ALPHA 0.4

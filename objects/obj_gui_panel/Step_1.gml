@@ -1,7 +1,7 @@
 /// @desc
 
 
-if (panelActive) {
+if (active) {
 	panelDestPos[0] = activePos[0];
 	panelDestPos[1] = activePos[1];
 }else{
@@ -9,6 +9,7 @@ if (panelActive) {
 	panelDestPos[1] = inactivePos[1];
 }
 
+/*
 // outside room -> destroy self
 if (slideOutFlag && 
 	x-panelWidth*0.5 > display_get_gui_width() ||
@@ -18,6 +19,7 @@ if (slideOutFlag &&
 		instance_destroy();
 		exit;
 	}
+*/
 
 // change position
 x += (panelDestPos[0] - x) *panelSpeed;
