@@ -8,8 +8,7 @@
 with (argument0) {
 	
 	argument3.myPanel = self;
-	argument3.panelX = argument1;
-	argument3.panelY = argument2;
+	argument3.panelOffset = [argument1, argument2];
 	ds_list_add(panelComponents, argument3);	
 	
 }

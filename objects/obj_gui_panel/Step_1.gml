@@ -2,11 +2,11 @@
 
 
 if (panelActive) {
-	panelDestX = activePosX
-	panelDestY = activePosY;
+	panelDestPos[0] = activePos[0];
+	panelDestPos[1] = activePos[1];
 }else{
-	panelDestX = inactivePosX;
-	panelDestY = inactivePosY;
+	panelDestPos[0] = inactivePos[0];
+	panelDestPos[1] = inactivePos[1];
 }
 
 // outside room -> destroy self
@@ -20,8 +20,8 @@ if (slideOutFlag &&
 	}
 
 // change position
-x += (panelDestX - x) *panelSpeed;
-y += (panelDestY - y) *panelSpeed;
+x += (panelDestPos[0] - x) *panelSpeed;
+y += (panelDestPos[1] - y) *panelSpeed;
 
 // change position of components
 var _comp;
@@ -30,6 +30,6 @@ var _panY = y - panelHeight*0.5;
 for (var _i=0; _i<ds_list_size(panelComponents); _i++) {
 	_comp = panelComponents[| _i];
 
-	_comp.x = _panX + _comp.panelX;
-	_comp.y = _panY + _comp.panelY;
+	_comp.x = _panX + _comp.panelOffset[0];
+	_comp.y = _panY + _comp.panelOffset[1];
 }
