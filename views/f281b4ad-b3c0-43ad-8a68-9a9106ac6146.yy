@@ -6,7 +6,8 @@
     "children": [
         "14d841e7-13ea-4a16-b4b4-4ec8170250f8",
         "e8792f78-5db9-455e-9346-d1d23286d8a4",
-        "fd1ca286-c477-4fcd-b24e-59b436e9fa0b"
+        "fd1ca286-c477-4fcd-b24e-59b436e9fa0b",
+        "fab18278-45bd-4e84-99bb-a77077546bc6"
     ],
     "filterType": "GMScript",
     "folderName": "EventHandler",

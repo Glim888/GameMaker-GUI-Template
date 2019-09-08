@@ -527,6 +527,14 @@
             }
         },
         {
+            "Key": "fab18278-45bd-4e84-99bb-a77077546bc6",
+            "Value": {
+                "id": "b2354edf-cf6a-49c5-8a72-ea15cbf63b02",
+                "resourcePath": "scripts\\buttonPanelExit_onReleased\\buttonPanelExit_onReleased.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fc51463b-e8c0-4b94-baa4-41e87a1043f2",
             "Value": {
                 "id": "ec51f668-ebaf-4fb8-a461-697cfd837b2f",
@@ -575,6 +583,7 @@
         "14d841e7-13ea-4a16-b4b4-4ec8170250f8",
         "e8792f78-5db9-455e-9346-d1d23286d8a4",
         "fd1ca286-c477-4fcd-b24e-59b436e9fa0b",
+        "fab18278-45bd-4e84-99bb-a77077546bc6",
         "ebfed057-a42b-4334-9755-2de1c2b5baf7",
         "51e6acf3-b432-4b9f-9ff4-208c2766a4f9",
         "90d52d5f-c262-42e5-9acb-634fd40d8d8a",
