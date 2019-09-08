@@ -1,0 +1,1 @@
+global.panel.active = !global.panel.active;

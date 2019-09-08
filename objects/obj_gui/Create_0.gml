@@ -1,6 +1,6 @@
 /// @desc
 
-myPanel = noone;
+myPanel = noone; // reference to panel, if element is added to a panel
 active = true;
 
 // Eventhandler

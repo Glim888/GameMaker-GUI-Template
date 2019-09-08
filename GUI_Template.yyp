@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "34a90d86-611f-4e1a-9a73-d691145cf65d",
+            "Value": {
+                "id": "cf51148f-3522-4f7d-bb41-7ed84d31ada0",
+                "resourcePath": "scripts\\button2_evHandler\\button2_evHandler.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3544a335-7734-4b3f-ad6f-a2237f8a0d9f",
             "Value": {
                 "id": "23b5fc89-6fe2-4f5a-bfca-3c6039f7fb2c",
@@ -252,6 +260,14 @@
                 "id": "ffe67d4a-087b-485b-8f21-b079cb19f4de",
                 "resourcePath": "views\\8cbef0fd-87b7-4799-adfd-c70243d943da.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8f457444-dbf2-41e9-a216-d96393e61cec",
+            "Value": {
+                "id": "83e1eb86-a584-49fd-be0c-bee3ef300437",
+                "resourcePath": "sprites\\spr_button_sound\\spr_button_sound.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -584,6 +600,7 @@
         "e8792f78-5db9-455e-9346-d1d23286d8a4",
         "fd1ca286-c477-4fcd-b24e-59b436e9fa0b",
         "fab18278-45bd-4e84-99bb-a77077546bc6",
+        "34a90d86-611f-4e1a-9a73-d691145cf65d",
         "ebfed057-a42b-4334-9755-2de1c2b5baf7",
         "51e6acf3-b432-4b9f-9ff4-208c2766a4f9",
         "90d52d5f-c262-42e5-9acb-634fd40d8d8a",
