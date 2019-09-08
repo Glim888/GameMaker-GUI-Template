@@ -7,6 +7,7 @@
 /// @param startValue
 /// @param titleFont
 /// @param titleColor
+/// @param active
 
 with (instance_create_layer(argument0, argument1, global.guiLayer, obj_gui_slider)) {
 	
@@ -16,6 +17,7 @@ with (instance_create_layer(argument0, argument1, global.guiLayer, obj_gui_slide
 	title = argument4;
 	titleFont = argument6;
 	titleColor = argument7;
+	active = argument8;
 		
 	return self;	
 }

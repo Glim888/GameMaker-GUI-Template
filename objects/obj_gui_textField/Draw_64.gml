@@ -13,7 +13,7 @@ if (active) {
 	
 }else{
 	
-	draw_set_alpha(GUI_INACTIVE_ALPHA);
+	draw_set_alpha(global.guiInactiveAlpha);
 	draw_sprite(spr_gui_textfield, 0, x, y);
 	draw_set_font(titleFont);
 	draw_set_halign(fa_center);

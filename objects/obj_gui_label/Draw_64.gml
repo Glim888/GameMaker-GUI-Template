@@ -5,7 +5,7 @@ if (active) {
 	draw_text(x, y, text);
 	draw_set_font(defaultFont);
 }else{
-	draw_set_alpha(GUI_INACTIVE_ALPHA);
+	draw_set_alpha(global.guiInactiveAlpha);
 	draw_set_font(font);
 	draw_text(x, y, text);
 	draw_set_font(defaultFont);

@@ -5,6 +5,7 @@
 /// @param textFont
 /// @param textColor
 /// @param startState
+/// @param active
 
 with (instance_create_layer(argument0, argument1, global.guiLayer, obj_gui_checkBox)) {
 	
@@ -12,6 +13,7 @@ with (instance_create_layer(argument0, argument1, global.guiLayer, obj_gui_check
 	titleFont = argument3;
 	titleColor = argument4;
 	state = argument5;
+	active = argument6;
 	
 	return self;	
 }

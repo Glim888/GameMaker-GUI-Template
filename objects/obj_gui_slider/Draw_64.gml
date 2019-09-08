@@ -11,7 +11,7 @@ if (active) {
 	draw_set_font(defaultFont);
 	draw_rCenter();
 }else{
-	draw_set_alpha(GUI_INACTIVE_ALPHA);
+	draw_set_alpha(global.guiInactiveAlpha);
 	draw_sprite(spr_gui_slider, 0, x, y);
 	draw_sprite(spr_gui_knob, 0, x + knobX, y);
 

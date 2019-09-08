@@ -11,7 +11,7 @@ if (active) {
 	draw_sprite(spr_gui_checkBox, state, x, y);
 	
 }else{
-	draw_set_alpha(GUI_INACTIVE_ALPHA);
+	draw_set_alpha(global.guiInactiveAlpha);
 	draw_set_font(titleFont);
 
 	draw_set_valign(fa_middle);

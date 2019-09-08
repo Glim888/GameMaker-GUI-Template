@@ -5,6 +5,7 @@
 /// @param title
 /// @param titleFont
 /// @param titleColor
+/// @param active
 
 
 with (instance_create_layer(argument0, argument1, global.guiLayer, obj_gui_textField)) {
@@ -13,6 +14,7 @@ with (instance_create_layer(argument0, argument1, global.guiLayer, obj_gui_textF
 	title = argument3;
 	titleFont = argument4;
 	titleColor = argument5;
+	active = argument6;
 	
 	return self;	
 }
