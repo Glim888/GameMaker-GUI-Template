@@ -12,10 +12,10 @@ if (active) {
 
 // outside room -> deactivate components
 if ( 
-	x-panelWidth*0.5 > display_get_gui_width() ||
-	x+panelWidth*0.5 < 0 ||
-	y-panelWidth*0.5 > display_get_gui_height() ||
-	y+panelHeight*0.5 < 0) {
+	x > display_get_gui_width() ||
+	x+panelWidth < 0 ||
+	y-panelHeight > display_get_gui_height() ||
+	y+panelHeight < 0) {
 		
 	if (!componentsDeactivated) {
 		for (var _i=0; _i<ds_list_size(panelComponents); _i++) {
