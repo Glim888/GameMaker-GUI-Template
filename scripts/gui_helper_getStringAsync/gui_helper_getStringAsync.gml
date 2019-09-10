@@ -1,5 +1,5 @@
-/// @description async_get_string(id)
-/// @function async_get_string
+/// @description gui_helper_getStringAsync(id)
+/// @function gui_helper_getStringAsync
 /// @param id
 
 var _id = ds_map_find_value(async_load, "id");

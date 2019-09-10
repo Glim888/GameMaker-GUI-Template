@@ -1,6 +1,6 @@
 /// @desc
 
-draw_sCenter();
+gui_helper_sCenter();
 if (active) {
 	
 	draw_sprite(spr_gui_textfield, 0, x, y);
@@ -10,7 +10,7 @@ if (active) {
 	draw_set_font(defaultFont);
 	draw_set_valign(fa_middle);
 	draw_text_color(x, y, text, c_black, c_black, c_black, c_black, 1);
-	draw_rCenter();
+	gui_helper_rCenter();
 	
 }else{
 	
@@ -22,10 +22,10 @@ if (active) {
 	draw_set_font(defaultFont);
 	draw_set_valign(fa_middle);
 	draw_text_color(x, y, text, c_black, c_black, c_black, c_black, 1);
-	draw_rCenter();
+	gui_helper_rCenter();
 	draw_set_alpha(1);
 	
 }
-draw_rCenter();
+gui_helper_rCenter();
 
 

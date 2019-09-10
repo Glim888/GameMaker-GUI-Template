@@ -1,6 +1,6 @@
 /// @desc
 
-draw_sCenter();
+gui_helper_sCenter();
 if (active) {
 	
 	draw_set_font(titleFont);	
@@ -23,4 +23,4 @@ if (active) {
 	draw_set_alpha(1);
 	
 }
-draw_rCenter();
+gui_helper_rCenter();

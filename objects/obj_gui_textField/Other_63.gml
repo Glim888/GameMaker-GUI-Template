@@ -1,10 +1,10 @@
 /// @desc
 
-var _val = async_get_string(getString);
+var _val = gui_helper_getStringAsync(getString);
 
 if (!is_undefined(_val)) {
 	text = _val;
-	if (onRelease != noone) script_execute(onRelease, self);	
+	gui_helper_riseEvents(onRelease);
 }
 
 getString = undefined;

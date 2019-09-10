@@ -8,7 +8,7 @@ if (active) {
 	// if click into textField
 	if (mouse_check_button_pressed(mb_left) && point_in_rectangle(_x, _y, x-widthHalf, y-heightHalf, x+widthHalf, y+heightHalf)) {
 		// rise event
-		if(onClick != noone) script_execute(onClick, self);
+		gui_helper_riseEvents(onClick);
 		getString = get_string_async("Input Text", "");
 	}
 }

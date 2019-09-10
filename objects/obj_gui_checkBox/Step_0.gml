@@ -8,6 +8,6 @@ if (active) {
 	// if clicked into checkbox
 	if (mouse_check_button_released(mb_left) && point_in_rectangle(_x, _y, x-leftBorder, y-topBorder, x+rightBorder, y+botBorder)) {
 		state = !state;
-		if (onRelease != noone) script_execute(onRelease, self);
+		gui_helper_riseEvents(onRelease);
 	}
 }

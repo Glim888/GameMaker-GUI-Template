@@ -6,7 +6,7 @@ var _y = device_mouse_y_to_gui(0);
 
 with (obj_gui_panel) {
 	if (global.mouseOverGuiElement) exit;
-	global.mouseOverGuiElement |= point_in_rectangle(_x, _y, x, y, x+panelWidth, y+panelHeight);
+	global.mouseOverGuiElement |= point_in_rectangle(_x, _y, x, y, x+panelSize[0], y+panelSize[1]);
 }
 
 with (obj_gui_button) {
