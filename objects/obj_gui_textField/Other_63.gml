@@ -1,4 +1,4 @@
-/// @desc
+/// @desc get input
 
 var _val = gui_helper_getStringAsync(getString);
 

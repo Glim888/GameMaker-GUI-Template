@@ -1,14 +1,12 @@
 /// @func gui_panel_addComponent
 /// @param panel
-/// @param x
-/// @param y
+/// @param [positionAtPanelX, positionAtPanelY]
 /// @param component
-
 
 with (argument0) {
 	
-	argument3.myPanel = self;
-	argument3.panelOffset = [argument1, argument2];
-	ds_list_add(panelComponents, argument3);	
+	argument2.gui_myPanel = self;
+	argument2.panelOffset = argument1;
+	ds_list_add(panelComponents, argument2);	
 	
 }

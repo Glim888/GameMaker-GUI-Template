@@ -1,3 +1,0 @@
-set sprites for knob exit etc
-center checkbox
-create calculations to script

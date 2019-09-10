@@ -6,6 +6,7 @@
 
 with (argument0) {
 		
+	
 	switch(argument1) {
 		
 		case 0: ds_list_add(onClick, argument2); break;

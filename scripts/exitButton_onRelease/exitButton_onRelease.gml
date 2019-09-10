@@ -1,0 +1,1 @@
+with (argument0) gui_myPanel.gui_active = false;

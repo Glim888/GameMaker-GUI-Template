@@ -2,15 +2,17 @@
 
 event_inherited();
 
-minVal = 0;
-maxVal = 0;
-value = 0;
-title = 0;
-titleFont = 0;
-titleColor = 0;
+// you can use these vars
+slider_minVal = 0;
+slider_maxVal = 0;
+slider_value = 0;
+slider_title = 0;
+slider_titleFont = 0;
+slider_titleColor = 0;
 
-width = sprite_get_width(spr_gui_slider);
-widthHalf = sprite_get_width(spr_gui_slider)*0.5;
-heightHalf = sprite_get_height(spr_gui_slider)*0.5;
+// do not use these vars
+width = sprite_get_width(SPRITE_SLIDER);
+widthHalf = sprite_get_width(SPRITE_SLIDER)*0.5;
+heightHalf = sprite_get_height(SPRITE_SLIDER)*0.5;
 defaultFont = 0;
 knobX = 0;

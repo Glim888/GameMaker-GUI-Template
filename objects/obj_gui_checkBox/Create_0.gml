@@ -2,15 +2,16 @@
 
 event_inherited();
 
-title = "";
-titleFont = 0;
-titleColor = 0;
-state = 0;
+// you can use these vars
+cb_title = "";
+cb_titleFont = 0;
+cb_titleColor = 0;
+cb_state = 0;
 
+// do not use these vars
 defaultFont = draw_get_font();
-width = sprite_get_width(spr_gui_checkBox);
-
-leftBorder = sprite_get_width(spr_gui_checkBox)*0.5 - sprite_get_bbox_left(spr_gui_checkBox);
-rightBorder = sprite_get_bbox_right(spr_gui_checkBox) - sprite_get_width(spr_gui_checkBox)*0.5;
-topBorder = sprite_get_height(spr_gui_checkBox)*0.5 - sprite_get_bbox_top(spr_gui_checkBox);
-botBorder = sprite_get_bbox_bottom(spr_gui_checkBox) - sprite_get_height(spr_gui_checkBox)*0.5;
+width = sprite_get_width(SPRITE_CHECKBOX);
+leftBorder = sprite_get_width(SPRITE_CHECKBOX)*0.5 - sprite_get_bbox_left(SPRITE_CHECKBOX);
+rightBorder = sprite_get_bbox_right(SPRITE_CHECKBOX) - sprite_get_width(SPRITE_CHECKBOX)*0.5;
+topBorder = sprite_get_height(SPRITE_CHECKBOX)*0.5 - sprite_get_bbox_top(SPRITE_CHECKBOX);
+botBorder = sprite_get_bbox_bottom(SPRITE_CHECKBOX) - sprite_get_height(SPRITE_CHECKBOX)*0.5;

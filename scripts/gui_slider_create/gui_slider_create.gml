@@ -1,23 +1,33 @@
 /// @func gui_slider_create
-/// @param x
-/// @param y
-/// @param minVal
-/// @param maxVal
-/// @param title
-/// @param startValue
-/// @param titleFont
-/// @param titleColor
-/// @param active
+/// @param [gui_activePosX, gui_activePosY]
+/// @param [gui_inactivePosX, gui_inactivePosY]
+/// @param gui_depth
+/// @param gui_slideSpeed
+/// @param gui_active
+/// @param slider_minVal
+/// @param slider_maxVal
+/// @param slider_value
+/// @param slider_title
+/// @param slider_titleFont
+/// @param slider_titleColor
 
-with (instance_create_layer(argument0, argument1, global.guiLayer, obj_gui_slider)) {
+
+with (instance_create_layer(argument0[0], argument0[1], global.guiLayer, obj_gui_slider)) {
 	
-	minVal = argument2;
-	maxVal = argument3;
-	value = argument5;
-	title = argument4;
-	titleFont = argument6;
-	titleColor = argument7;
-	active = argument8;
-		
+	gui_activePos = argument0;
+	gui_inactivePos = argument1;
+	gui_depth = argument2;
+	gui_slideSpeed = argument3;
+	gui_active = argument4;		
+	
+	
+	slider_minVal = argument5;
+	slider_maxVal = argument6;
+	slider_value = argument7;
+	slider_title = argument8;
+	slider_titleFont = argument9;
+	slider_titleColor = argument10;
+	
+	isCreatedByScript = true;		
 	return self;	
 }

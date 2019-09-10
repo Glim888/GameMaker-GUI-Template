@@ -2,15 +2,16 @@
 
 event_inherited();
 
-panelTitle = "Panel";
-panelSurf = noone;
-panelSpeed = 0;
-inactivePos = [0, 0];
-activePos = [0, 0];
-panelDestPos = [0, 0];
-panelCol = 0;
-panelSize = [0, 0];
+// you can use these vars
+panel_title = "Panel";
+panel_color = 0;
+panel_colorBorderLeft = 0;
+panel_colorBorderLeft = 0;
+panel_size = [0, 0];
 
+
+// do not use
+panelSurf = noone;
 exitButton = noone;
 componentsDeactivated = false;
 panelComponents = ds_list_create();

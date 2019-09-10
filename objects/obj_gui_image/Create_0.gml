@@ -2,4 +2,5 @@
 
 event_inherited();
 
-sprite = 0;
+// you can use these vars
+// sprite_index

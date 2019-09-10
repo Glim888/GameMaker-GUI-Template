@@ -1,3 +1,0 @@
-/// @desc
-
-global.mouseOverGuiElement = false;
