@@ -1,7 +1,7 @@
 /// @desc
 
 
-if (gui_myPanel == noone) {
+if (gui_myPanel == noone && ! stopSliding) {
 	// set destination position
 	if (gui_active) {
 		destPos[0] = gui_activePos[0];

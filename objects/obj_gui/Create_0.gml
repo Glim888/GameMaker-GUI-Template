@@ -8,8 +8,9 @@ gui_activePos = [x, y]; // if gui element is active it will maintain this positi
 gui_inactivePos = [0, 0]; // if gui element is inactive it will maintain this position
 gui_slideSpeed = 0.05; // defines how fast the gui element moves
 
+
 // do not use
 destPos = [0 , 0];
 isCreatedByScript = false;
-
+stopSliding = false;
 alarm[0] = 1;

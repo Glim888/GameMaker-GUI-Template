@@ -15,3 +15,5 @@ panelSurf = noone;
 exitButton = noone;
 componentsDeactivated = false;
 panelComponents = ds_list_create();
+movePanelOffset = [0, 0];
+movePanelFlag = false;
