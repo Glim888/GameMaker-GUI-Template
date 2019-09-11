@@ -7,7 +7,8 @@ if (gui_active) {
 
 	// check if mouse is over gui element
 	var _mouseOverGuiElement = position_meeting(_x, _y, self);
-
+	global.mouseOverGuiElement = _mouseOverGuiElement;
+	
 	// click
 	if (mouse_check_button_released(mb_left) && _mouseOverGuiElement) {		
 		gui_helper_riseEvents(onRelease);

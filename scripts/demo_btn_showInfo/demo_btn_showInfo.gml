@@ -1,0 +1,1 @@
+obj_demo_panel_info.gui_active = true;

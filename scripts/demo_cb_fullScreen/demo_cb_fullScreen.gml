@@ -1,0 +1,1 @@
+with (argument0) window_set_fullscreen(cb_state);

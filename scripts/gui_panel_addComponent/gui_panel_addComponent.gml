@@ -3,10 +3,13 @@
 /// @param [positionAtPanelX, positionAtPanelY]
 /// @param component
 
-with (argument0) {
+with (argument2) {
 	
-	argument2.gui_myPanel = self;
-	argument2.panelOffset = argument1;
-	ds_list_add(panelComponents, argument2);	
+	gui_activePos = [0, 0];
+	gui_inactivePos = [0, 0];
+	gui_depth = argument0.gui_depth -1;
+	gui_myPanel = argument0;
+	panelOffset = argument1;
+	ds_list_add(argument0.panelComponents, self);	
 	
 }

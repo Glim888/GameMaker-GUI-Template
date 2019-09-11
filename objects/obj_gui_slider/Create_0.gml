@@ -11,5 +11,5 @@ slider_titleFont = 0;
 slider_titleColor = 0;
 
 // do not use these vars
-width = sprite_width;
 knobX = 0;
+lastValue = -123123;

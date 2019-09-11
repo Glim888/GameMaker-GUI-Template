@@ -1,7 +1,7 @@
 /// @desc add gui element
 
 
-if (!instance_exists(__ELEMENT__)) exit;
+if (is_undefined(__ELEMENT__) || !instance_exists(__ELEMENT__)) exit;
 
 if (object_is_ancestor(__ELEMENT__.object_index, obj_gui_interactive)) {
 	
@@ -15,7 +15,6 @@ if (object_is_ancestor(__ELEMENT__.object_index, obj_gui_interactive)) {
 		}
 	}
 	if (_b) ds_list_add(interactive_elements, __ELEMENT__);	
-	Log("add", object_get_name(__ELEMENT__.object_index));
 }
 
 var _size= ds_list_size(gui_elements);
@@ -28,4 +27,3 @@ for (var _i=0; _i<_size; _i++) {
 }
 
 ds_list_add(gui_elements, __ELEMENT__);
-Log(ds_list_size(gui_elements));

@@ -11,8 +11,7 @@ if (gui_active) {
 
 	// click events
 	if (mouse_check_button(mb_left) && _mouseOverGuiElement) {
-		knobX = _x - x;
-		slider_value = ((knobX+widthHalf) / width) * (slider_maxVal-slider_minVal);	
+		slider_value = (((_x-x)+sprite_width*0.5) / sprite_width) * (slider_maxVal-slider_minVal);	
 		gui_helper_riseEvents(onChange);
 	}
 
@@ -23,5 +22,11 @@ if (gui_active) {
 
 	if (mouse_check_button_released(mb_left) && _mouseOverGuiElement) {
 		gui_helper_riseEvents(onRelease);
+	}
+	
+	// update knob position
+	if (lastValue != slider_value) {		
+		lastValue = slider_value;	
+		knobX = -sprite_width*0.5 + (slider_value / (slider_maxVal-slider_minVal)) * sprite_width;
 	}
 }

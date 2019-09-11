@@ -12,7 +12,7 @@ if (gui_active) {
 	// if clicked into checkbox
 	if (mouse_check_button_released(mb_left) && _mouseOverGuiElement) {
 		cb_state = !cb_state;
-		image_index = cb_state;
 		gui_helper_riseEvents(onRelease);
 	}
+	image_index = cb_state;
 }

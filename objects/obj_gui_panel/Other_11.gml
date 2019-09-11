@@ -2,11 +2,12 @@
 
 
 //create exit button relative to top right corner
+
 if (panel_useDefault) {
 	with (exitButton) instance_destroy();
-	exitButton= gui_button_create([50,0], [0,0], gui_depth-1, 0.1, true, SPRITE_PANEL_CLOSE);
+	exitButton = gui_button_create([50,0], [0,0], gui_depth-1, 0.1, true, SPRITE_PANEL_CLOSE, "", font_32, c_white);
 
-	gui_addEventHandler(exitButton, eventType_button.onRelease, EVENTHANDLER_PANEL_CLOSE);
+	gui_addEventHandler(exitButton, eventType_button.onRelease, gui_helper_closePanel);
 	gui_panel_addComponent(self, [panel_size[0]-sprite_get_width(SPRITE_PANEL_CLOSE)*0.5, -PANEL_HEAD_SIZE*0.5], exitButton);
 }
 

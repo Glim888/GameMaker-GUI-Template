@@ -9,7 +9,11 @@
 /// @param panel_colorBorderLeft
 /// @param panel_colorBorderRight
 /// @param panel_title
+/// @param panel_useDefault
+/// @param panel_isMoveable
+/// @param sprite_index
 /// @return panel
+
 
 var _panel = instance_create_layer(argument1[0], argument1[1], global.guiLayer, obj_gui_panel);
 
@@ -26,6 +30,9 @@ with (_panel) {
 	panel_colorBorderLeft = argument7;
 	panel_colorBorderLeft = argument8;
 	panel_title = argument9;
+	panel_useDefault = argument10;
+	panel_isMoveable = argument11;
+	sprite_index = argument12;
 	
 	isCreatedByScript = true;
 	return self;

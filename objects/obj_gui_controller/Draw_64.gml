@@ -35,13 +35,21 @@ for (var _i=_size-1; _i>=0; _i--) {
 	
 			case obj_gui_button:
 				
+				draw_set_font(button_titleFont);
 				if (gui_active) {
 					draw_self();
+					gui_helper_sCenter();
+					draw_text_color(x, y, button_title, button_titleColor, button_titleColor, button_titleColor, button_titleColor, 1);
+					gui_helper_rCenter();
 				}else{
 					draw_set_alpha(INACTIVE_ALPHA);
 					draw_self();
+					gui_helper_sCenter();
+					draw_text_color(x, y, button_title, button_titleColor, button_titleColor, button_titleColor, button_titleColor, 1);
+					gui_helper_rCenter();
 					draw_set_alpha(1);
 				}
+				draw_set_font(_defaultFont);
 
 
 			break;
