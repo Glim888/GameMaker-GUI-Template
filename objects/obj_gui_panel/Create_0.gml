@@ -8,6 +8,8 @@ panel_color = 0;
 panel_colorBorderLeft = 0;
 panel_colorBorderLeft = 0;
 panel_size = [0, 0];
+panel_useDefault = true;
+panel_isMoveable = true;
 
 
 // do not use

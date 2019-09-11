@@ -21,7 +21,7 @@ with (_panel) {
 	gui_slideSpeed = argument3;
 	gui_active = argument4;
 	
-	panel_size = argument5; // PANEL HEAD
+	panel_size = argument5;
 	panel_color = argument6;
 	panel_colorBorderLeft = argument7;
 	panel_colorBorderLeft = argument8;

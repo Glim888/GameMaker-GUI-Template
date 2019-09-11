@@ -207,11 +207,27 @@
             }
         },
         {
+            "Key": "5b432810-2995-4417-bbaa-2d98172f6cf4",
+            "Value": {
+                "id": "9457a4e7-d50a-4e3c-b232-88efa00fa10a",
+                "resourcePath": "sprites\\spr_misc_terrain\\spr_misc_terrain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "60625b37-4737-4b9a-85d9-6c032cfee149",
             "Value": {
                 "id": "c3375993-9f1a-4727-8ef0-1429667acbf0",
                 "resourcePath": "views\\60625b37-4737-4b9a-85d9-6c032cfee149.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "62f857eb-1fc5-4803-910d-1a2d106d69cc",
+            "Value": {
+                "id": "f8e09f7c-dc30-48e1-bd6f-b1a3846d6d2a",
+                "resourcePath": "sprites\\sprite14\\sprite14.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -468,6 +484,14 @@
                 "id": "ef4649c4-9e72-4b8c-a6ca-4d6cbb5d7270",
                 "resourcePath": "scripts\\gui_constants\\gui_constants.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c78f0d92-fdd5-42d8-bf37-5ec989bb58f4",
+            "Value": {
+                "id": "bf58ed6e-9d93-46ea-bd3a-0029d2775446",
+                "resourcePath": "objects\\panel\\panel.yy",
+                "resourceType": "GMObject"
             }
         },
         {

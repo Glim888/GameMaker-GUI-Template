@@ -8,25 +8,27 @@ if (gui_active) {
 	var _mouseOverGuiElement = point_in_rectangle(_x, _y, x, y, x+panel_size[0], y+panel_size[1]);
 	global.mouseOverGuiElement = _mouseOverGuiElement;
 	
-	var _headColl = point_in_rectangle(_x, _y, x, y, x+panel_size[0], y+PANEL_HEAD_SIZE);
-	if (mouse_check_button_pressed(mb_left) && _headColl) {
-		movePanelOffset[0] = _x - x;
-		movePanelOffset[1] = _y - y;
-		movePanelFlag = true;
-		stopSliding = true;
-	}
+	if (panel_isMoveable) {
+		var _headColl = point_in_rectangle(_x, _y, x, y, x+panel_size[0], y+PANEL_HEAD_SIZE);
+		if (mouse_check_button_pressed(mb_left) && _headColl) {
+			movePanelOffset[0] = _x - x;
+			movePanelOffset[1] = _y - y;
+			movePanelFlag = true;
+			stopSliding = true;
+		}
 	
-	if (mouse_check_button(mb_left) && movePanelFlag) {
-		x = _x - movePanelOffset[0];
-		y = _y - movePanelOffset[1];
-	}
+		if (mouse_check_button(mb_left) && movePanelFlag) {
+			x = _x - movePanelOffset[0];
+			y = _y - movePanelOffset[1];
+			event_user(2);
+		}
 	
-	if (movePanelFlag && mouse_check_button_released(mb_left)) {
-		movePanelFlag = false;
-		stopSliding = false;		
-		gui_activePos = [x, y];		
+		if (movePanelFlag && mouse_check_button_released(mb_left)) {
+			movePanelFlag = false;
+			stopSliding = false;		
+			gui_activePos = [x, y];		
+		}
 	}
-	
 }else{
 	stopSliding = false;
 }
