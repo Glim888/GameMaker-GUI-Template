@@ -14,3 +14,4 @@ destPos = [0 , 0];
 isCreatedByScript = false;
 stopSliding = false;
 alarm[0] = 1;
+image_speed = 0;

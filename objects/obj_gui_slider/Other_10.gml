@@ -6,7 +6,7 @@ if (gui_active) {
 	var _y = device_mouse_y_to_gui(0);
 
 	// check if mouse is over gui element
-	var _mouseOverGuiElement = point_in_rectangle(_x, _y, x-widthHalf, y-heightHalf, x+widthHalf, y+heightHalf);
+	var _mouseOverGuiElement = position_meeting(_x, _y, self);
 	global.mouseOverGuiElement = _mouseOverGuiElement;
 
 	// click events

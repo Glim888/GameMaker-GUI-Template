@@ -16,7 +16,7 @@ var _slider = gui_slider_create([0, 0], [0, 0], 0, 0.1, true, 0, 100, 25, "hans"
 var _checkbox = gui_checkBox_create([0, 0], [0, 0], 0, 0.1, true, "cb", font_32, c_blue, false);
 var _label = gui_label_create([0, 0], [0, 0], 0, 0.1, true, "Hellom", font_32, c_red);
 var _textfield = gui_textField_create([0, 0], [0, 0], 0, 0.1, true, "hallo", "textbox", font_32, c_yellow );
-var _image = gui_image_create([0, 0], [0, 0], 11, 0.1, true, spr_button_sound);
+var _image = gui_image_create([0, 0], [0, 0], 0, 0.1, true, spr_button_sound);
 
 gui_addEventHandler(_buttonOpenSettings, eventType_button.onRelease, buttonSettings_onRelease);
 gui_addEventHandler(_button, eventType_button.onRelease, button_onRelease);
