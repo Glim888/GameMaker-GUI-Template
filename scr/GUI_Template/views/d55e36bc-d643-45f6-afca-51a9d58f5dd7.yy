@@ -9,7 +9,7 @@
         "54b386c0-435c-4e25-beb3-554baceda253"
     ],
     "filterType": "GMObject",
-    "folderName": "Demo",
+    "folderName": "minimalist tutorial",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

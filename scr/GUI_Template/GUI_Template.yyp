@@ -122,7 +122,7 @@
             "Key": "2aea2ad4-3ed0-4fdf-b16d-88102b501f0c",
             "Value": {
                 "id": "6e22e9bf-51f2-4efe-9776-d85bc4dc8f31",
-                "resourcePath": "objects\\obj_gui_pnl_1\\obj_gui_pnl_1.yy",
+                "resourcePath": "objects\\obj_panel_1\\obj_panel_1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -138,7 +138,7 @@
             "Key": "2f80b231-a84e-4017-882c-9ed9813afc28",
             "Value": {
                 "id": "f09439bc-0193-4ee0-b046-ef4df35b4c7b",
-                "resourcePath": "objects\\obj_gui_btn_openSettings\\obj_gui_btn_openSettings.yy",
+                "resourcePath": "objects\\obj_button_1\\obj_button_1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -242,7 +242,7 @@
             "Key": "54b386c0-435c-4e25-beb3-554baceda253",
             "Value": {
                 "id": "dd3f7eda-e982-4ab7-903e-de1ef1e87094",
-                "resourcePath": "objects\\obj_test\\obj_test.yy",
+                "resourcePath": "objects\\obj_roomStart\\obj_roomStart.yy",
                 "resourceType": "GMObject"
             }
         },

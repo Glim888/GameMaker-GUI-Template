@@ -1,1 +1,1 @@
-obj_gui_pnl_1.gui_active = true;
+obj_panel_1.gui_active = true;
