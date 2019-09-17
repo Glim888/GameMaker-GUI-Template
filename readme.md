@@ -15,10 +15,11 @@ Here you can see how a simple gui would look like. There are different gui depth
 
 ![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo1.PNG)
 ![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo2.PNG)
+![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo3.PNG)
 ## Minimalist tutorial
 
 ### Preparation:
-- Download [Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/GUI Template.yymp)
+- Download [Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/GUI_Template.yymp)
 ![Import Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut1.png)
 ---
 ### Setup Template:
