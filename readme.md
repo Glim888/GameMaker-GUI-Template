@@ -14,7 +14,8 @@ You can **easily design your own panels via Room Editor!**
 Here you can see how a simple gui would look like. There are different gui depths and a collision system, so you can´t click on buttons under the highest gui element!
 
 ![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo1.PNG)
-
+![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo2.PNG)
+![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo3.PNG)
 ## Minimalist tutorial
 
 ### Preparation:
