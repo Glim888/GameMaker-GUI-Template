@@ -1,7 +1,7 @@
 
 # Free GUI Template for GameMaker Studio 2
 
-## Download the GMS2 Package for free!
+## Download the GMS2 Package for FREE!
 
 [Download link](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/GUI_TEMPLATE.yymp)
 
@@ -14,23 +14,30 @@ You can **easily design your own panels via Room Editor!**
 
 Here you can see how a simple gui would look like. There are different gui depths and a collision system, so you can´t click on buttons under the highest gui element!
 
-![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo1.PNG)
+(VIDEO!)
+![VIDEO](https://img.youtube.com/vi/lfGCx12zlE8/hqdefault.jpg)
 ![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo2.PNG)
 ![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo3.PNG)
-## Minimalist tutorial
+
+
+
+# Minimalist tutorial
 
 ### Preparation:
 - Download [Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/GUI_Template.yymp)
 - Import the downloaded package
-![Import Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut1.PNG)
+- ![Import Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut1.PNG)
 ---
 ### Setup Template:
 
-1. Add **gui_init** to a **Room Start Event** of your game (e. g. obj_controller).
+1. Add **gui_init** to a **Room Start Event** of your game (e. g. obj_controller). **This function needs to be called everytime you change the room!**
+
+
 ```gui_init(room_width, room_height, true);```
 
+- ![Import Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut4.PNG)
 
-2. Open **gui_constants script** and and change **GUI_LAYER** macro to your gui layer, or a layer you do use in your game.
+2. Open **gui_constants script** and change **GUI_LAYER** macro to your gui layer, or a layer you do use in your game.
 ```#macro GUI_LAYER "XXX"```
 ---
 ### Create Panel (window)
@@ -39,55 +46,59 @@ Here you can see how a simple gui would look like. There are different gui depth
 
 ![tut1](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut2.PNG)
 
-4. Copy the following code to the **inherited create event** of **obj_panel_1**.
->DONT forget to inherit the create event!
+4. Copy the following code to the **create event** of **obj_panel_1**.
 ```
+// Inherit the parent event
+event_inherited(); // IMPORTANT! 
+
 panel_title = "Panel Tutorial";
 panel_color = make_color_rgb(73, 73, 123);
 panel_colorBorderLeft = make_color_rgb(51, 56, 74);
 panel_colorBorderRight = make_color_rgb(51, 56, 154);
 ```
-6. Add the panel object to the room and stretch it like you want.
-7. You will see following result.
-![tut2](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut3.PNG)
+5. Add the panel object to the room and stretch it like you want.
 ---
 ### Add a button, which opens the panel
-7. Create a new object **obj_button_1**, which inherits from **obj_gui_button**. Set the sprite to **spr_gui_button**, so you will be able to stretch the sprite later in room editor.
+6. Create a new object **obj_button_1**, which inherits from **obj_gui_button**. Set the sprite to **spr_gui_button**, so you will be able to stretch the sprite later in room editor.
 
-8. Copy the following code to the **inherited create event** of **obj_button_1**
->DONT forget to inherit the create event!
+7. Copy the following code to the **create event** of **obj_button_1**
 ```
+// Inherit the parent event
+event_inherited(); // IMPORTANT!
+
 button_title = "Open";
-button_titleFont = YOUR FONT or PANEL_TITLE_FONT; // choose a custom font or use PANEL_TITLE_FONT
+button_titleFont = PANEL_TITLE_FONT;
 button_titleColor = c_black;
 ```
 
-9. Add the button to room.
+8. Add the button to room.
 
 ### Add functionality to the button
-10. At the moment the button has no function. To assign the button some functionality we will add an event handler (a script which gets called, when the button is clicked or released). We can do this by adding **gui_addEventHandler** to the **inherited create event** of **obj_button_1**. Add following code to the inherited create event of obj_button_1.
+9. At the moment the button has no function. To assign the button some functionality we will add an event handler (a script which gets called, when the button is clicked or released). We can do this by adding **gui_addEventHandler** to the **create event** of **obj_button_1**. Add following code to the inherited create event of obj_button_1.
 
 ```
 gui_addEventHandler(self, eventType_button.onRelease, button1_onRelease);
 ```
 
-11. Now we need to create a script called **button1_onRelease**. It gets called when we release the button. Create it and add following code to it.
+10. Now we need to create a script called **button1_onRelease**. It gets called when we release the button. Create it and add following code to it.
 ```
 obj_panel_1.gui_active = true;
 ```
 
-12. The last thing we have to do is adding following code to the **inherited create event** of **obj_panel_1**. This code will disable the panel at startup and set its inactive position outside of the room.
+11. The last thing we have to do is adding following code to the **create event** of **obj_panel_1**. This code will disable the panel at startup and set its inactive position outside of the room.
 ```
 gui_active = false
 gui_inactivePos = [-sprite_width, y];
 ```
+
+12. Start the game and you should see something like the following picture.
 ![tut3](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut3.PNG)
 
 
 ## GUI Elements
 
 
-### INFO:
+### General INFO:
 All gui elements provide **variables you can change**. You will **find them in the create event** of the specific parent element (e.g. obj_gui) you want to use. Here an example:
 ```
 // YOU CAN USE THESE VARIABLES
@@ -109,7 +120,7 @@ image_speed = 0;
 > only use the variables at the YOU CAN USE THESE VARIABLES section
 ---
 ### obj_gui:
-Every gui element inherits from **obj_gui**. It provides some **usefull variables**, that you can **change**.
+Every gui element inherits from **obj_gui**. It provides some **usefull variables**, that you can **change** in the childrens (e.g. obj_button_1).
 >You should not instantiate obj_gui directly (its abstract). Always use one of its childs! (button, panel...)
 
 **Variables you can change:**
@@ -142,10 +153,10 @@ Every gui element can use this **event_user(0)** event to **draw additional stuf
 ---
 ### obj_gui_panel:
 
-Used to group collections of gui elements like a window from microsoft.
+Used to group collections of gui elements. It is like like a window from microsoft.
 
 **Variables you can change:**
->obj_gui variables can also be used!
+>obj_gui variables can also be used! (e.g. gui_active, gui_XXX)
 
 Use the default panel (assigned sprite will be ignored -> the panel uses a predefined look)
 ```
@@ -181,11 +192,11 @@ panel_useExitButton = true;
 ```
 > only available for default panel (panel_useDefault = true;)
 
-
+---
 ### obj_gui_button:
 
 **Variables you can change:**
->obj_gui variables can also be used!
+>obj_gui variables can also be used! (e.g. gui_active, gui_XXX)
 
 - Set the sprite of the button
 ```
@@ -217,9 +228,10 @@ gui_addEventHandler(self, eventType_button.onRelease, button1_onRelease);
 
 ### obj_gui_label:
 
-Simple Text
+Simple Text, which can be used to draw infos at the gui.
 
 **Variables you can change:**
+>obj_gui variables can also be used! (e.g. gui_active, gui_XXX)
 
 - text you want to draw
 ```
@@ -235,10 +247,12 @@ label_font = noone;
 label_color = c_white;
 ```
 
-
+---
 ### obj_gui_textfield:
+Field, which can be used to receive user input as text.
 
 **Variables you can change:**
+>obj_gui variables can also be used! (e.g. gui_active, gui_XXX)
 
 - default text, that is in the textfiled
 ```
@@ -261,6 +275,7 @@ textfield_titleColor = 0;
 ### obj_gui_slider:
 
 **Variables you can change:**
+>obj_gui variables can also be used! (e.g. gui_active, gui_XXX)
 
 - minimal value of the slider
 ```
@@ -290,6 +305,7 @@ slider_titleColor = 0;
 ### obj_gui_checkbox:
 
 **Variables you can change:**
+>obj_gui variables can also be used! (e.g. gui_active, gui_XXX)
 
 - title of the checkbox
 ```
@@ -312,6 +328,7 @@ cb_state = 0;
 ### obj_gui_image:
 
 **Variables you can change:**
+>obj_gui variables can also be used! (e.g. gui_active, gui_XXX)
 
 - sprite of the image
 ```
@@ -320,6 +337,7 @@ sprite_index = spr_picture;
 
 ## Scripts:
 
+### gui_init
 This function needs to be called once per room (at start up -> Room Start). It initializes the GUI Template
 
 - width of the gui
@@ -328,59 +346,68 @@ This function needs to be called once per room (at start up -> Room Start). It i
 ```
 gui_init(gui_width, gui_height, useDesigner);
 ```
-
+---
+### gui_panel_addComponent 
 Add a gui element to a panel. A assigned element will stay on top of that panel and maintain its position relative to the panel.
 ```
 gui_panel_addComponent (panel, [positionAtPanelXY], component)
 ```
-
+---
+### gui_addEventHandler 
 Add an event handler to a interactive element (button, slider, textfield, checkbox). Eventhandlers are scripts, which gets called after "clicking on a button", moving the slider knob...
 ```
 gui_addEventHandler (guiElement, event_type, eventHander)
 ```
-
+---
+### gui_showMessage 
 Draw a message. The message will slide into the room and vanish after some time.
 ```
 gui_showMessage (title, text, font, colorText, timerInSteps)
 ```
+---
+### gui_showMessage_ext 
 Draw a message. The message will slide into the room and vanish after some time.
 ```
 gui_showMessage_ext ([posXY], [startPosXY], title, text, font, colorText, useExitButton, timerInSteps)
 ```
-
+---
+### gui_useShader 
+ This function let you use a shader, that get applied to the gui. 
 ```
 gui_useShader (preShaderScript, postShaderScript, useShader)
 ```
-
-
+---
+### gui_panel_create
 ```
 gui_panel_create([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, [panel_sizeXY], panel_color, panel_colorBorderLeft, panel_colorBorderRight, panel_title,panel_useDefault, panel_isMoveable, panel_useExitButton, sprite_index)
 ```
-
+---
+### gui_image_create 
 ```
 gui_image_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, sprite_index)
 ```
-
+---
+### gui_button_create 
 ```
 gui_button_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, sprite_index, button_title, button_titleFont, button_titleColor)
 ```
-
+---
+### gui_label_create 
 ```
 gui_label_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, label_text, label_font, label_color)
 ```
-
+---
+### gui_slider_create 
 ```
 gui_slider_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, slider_minVal, slider_maxVal, slider_value, slider_title, slider_titleFont, slider_titleColor)
 ```
-
+---
+### gui_checkBox_create 
 ```
 gui_checkBox_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, cb_title, cb_titleFont, cb_titleColor, cb_state)
 ```
-
+---
+### gui_textField_create 
 ```
 gui_textField_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, textfield_text, textfield_title, textfield_titleFont, textfield_titleColor)
 ```
-
-
-
-
