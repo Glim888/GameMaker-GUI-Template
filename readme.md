@@ -21,6 +21,7 @@ Here you can see how a simple gui would look like. There are different gui depth
 
 ### Preparation:
 - Download [Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/GUI_Template.yymp)
+- Import the downloaded package
 ![Import Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut1.PNG)
 ---
 ### Setup Template:
@@ -108,12 +109,12 @@ image_speed = 0;
 > only use the variables at the YOU CAN USE THESE VARIABLES section
 ---
 ### obj_gui:
-Every gui elements inherits from **obj_gui**. It provides some **usefull variables**, that you can **change**.
+Every gui element inherits from **obj_gui**. It provides some **usefull variables**, that you can **change**.
 >You should not instantiate obj_gui directly (its abstract). Always use one of its childs! (button, panel...)
 
 **Variables you can change:**
 
-- This variable is a reference to the assigned panel OR noone if it is not assigned to a panel. 
+- This variable is a reference to the assigned panel OR **noone** if it is not assigned to a panel. 
 ```
 gui_myPanel = noone; 
 ```
@@ -130,7 +131,7 @@ gui_depth = 0;
 gui_activePos = [x, y]; // if gui element is active it will maintain this position
 gui_inactivePos = [0, 0]; // if gui element is inactive it will maintain this position
 ```
-- Defines how fast the gui element slides
+- Defines how fast the gui element slides from active to inactive position
 ```
 gui_slideSpeed = 0.05;
 ```
@@ -141,7 +142,7 @@ Every gui element can use this **event_user(0)** event to **draw additional stuf
 ---
 ### obj_gui_panel:
 
-Used to group collections of gui elements.
+Used to group collections of gui elements like a window from microsoft.
 
 **Variables you can change:**
 >obj_gui variables can also be used!
@@ -239,18 +240,19 @@ label_color = c_white;
 
 **Variables you can change:**
 
+- default text, that is in the textfiled
 ```
 textfield_text = 0;
 ```
-
+- title of the text field
 ```
 textfield_title = 0;
 ```
-
+- font of the title
 ```
 textfield_titleFont = 0;
 ```
-
+- color of the title
 ```
 textfield_titleColor = 0;
 ```
@@ -260,26 +262,27 @@ textfield_titleColor = 0;
 
 **Variables you can change:**
 
+- minimal value of the slider
 ```
 slider_minVal = 0;
 ```
-
+- maximal value of the slider
 ```
 slider_maxVal = 0;
 ```
-
+- start or default value of the slider
 ```
 slider_value = 0;
 ```
-
+- title of the slider
 ```
 slider_title = 0;
 ```
-
+- font of the title
 ```
 slider_titleFont = 0;
 ```
-
+- color of the title
 ```
 slider_titleColor = 0;
 ```
@@ -288,18 +291,19 @@ slider_titleColor = 0;
 
 **Variables you can change:**
 
+- title of the checkbox
 ```
 cb_title = "";
 ```
-
+- font of the title
 ```
 cb_titleFont = 0;
 ```
-
+- color of the title
 ```
 cb_titleColor = 0;
 ```
-
+- default / actual state of the checkbox (checked or not)
 ```
 cb_state = 0;
 ```
@@ -308,28 +312,38 @@ cb_state = 0;
 ### obj_gui_image:
 
 **Variables you can change:**
+
+- sprite of the image
 ```
 sprite_index = spr_picture;
 ```
 
 ## Scripts:
 
+This function needs to be called once per room (at start up -> Room Start). It initializes the GUI Template
+
+- width of the gui
+- height of the gui
+- use designer -> let you design your panels or gui via Room Editor
 ```
 gui_init(gui_width, gui_height, useDesigner);
 ```
 
+Add a gui element to a panel. A assigned element will stay on top of that panel and maintain its position relative to the panel.
 ```
 gui_panel_addComponent (panel, [positionAtPanelXY], component)
 ```
 
+Add an event handler to a interactive element (button, slider, textfield, checkbox). Eventhandlers are scripts, which gets called after "clicking on a button", moving the slider knob...
 ```
 gui_addEventHandler (guiElement, event_type, eventHander)
 ```
 
+Draw a message. The message will slide into the room and vanish after some time.
 ```
 gui_showMessage (title, text, font, colorText, timerInSteps)
 ```
-
+Draw a message. The message will slide into the room and vanish after some time.
 ```
 gui_showMessage_ext ([posXY], [startPosXY], title, text, font, colorText, useExitButton, timerInSteps)
 ```
@@ -340,33 +354,32 @@ gui_useShader (preShaderScript, postShaderScript, useShader)
 
 
 ```
-gui_panel_create
+gui_panel_create([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, [panel_sizeXY], panel_color, panel_colorBorderLeft, panel_colorBorderRight, panel_title,panel_useDefault, panel_isMoveable, panel_useExitButton, sprite_index)
 ```
 
 ```
-gui_image_create
+gui_image_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, sprite_index)
 ```
 
 ```
-gui_button_create
+gui_button_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, sprite_index, button_title, button_titleFont, button_titleColor)
 ```
 
 ```
-gui_label_create
+gui_label_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, label_text, label_font, label_color)
 ```
 
 ```
-gui_slider_create
+gui_slider_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, slider_minVal, slider_maxVal, slider_value, slider_title, slider_titleFont, slider_titleColor)
 ```
 
 ```
-gui_checkBox_create
+gui_checkBox_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, cb_title, cb_titleFont, cb_titleColor, cb_state)
 ```
 
 ```
-gui_textField_create
+gui_textField_create ([gui_activePosXY], [gui_inactivePosXY], gui_depth, gui_slideSpeed, gui_active, textfield_text, textfield_title, textfield_titleFont, textfield_titleColor)
 ```
-
 
 
 
