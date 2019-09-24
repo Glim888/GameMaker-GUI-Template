@@ -124,7 +124,7 @@ image_speed = 0;
 
 For better understanding I have created a class/object diagram:
 
-![class diag](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/GUI_Template_classDiag.PNG)
+![class diag](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/GUI_Template_classDiag.png)
 
 ---
 ### obj_gui:
