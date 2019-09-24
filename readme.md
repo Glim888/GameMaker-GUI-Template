@@ -1,4 +1,5 @@
 
+
 # Free GUI Template for GameMaker Studio 2
 
 ## Download the GMS2 Package for FREE!
@@ -14,8 +15,10 @@ You can **easily design your own panels via Room Editor!**
 
 Here you can see how a simple gui would look like. There are different gui depths and a collision system, so you can´t click on buttons under the highest gui element!
 
-(VIDEO!)
+- ![watch video](https://www.youtube.com/watch?v=lfGCx12zlE8)
+
 ![VIDEO](https://img.youtube.com/vi/lfGCx12zlE8/hqdefault.jpg)
+
 ![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo2.PNG)
 ![Demo](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/Demo3.PNG)
 
@@ -26,7 +29,7 @@ Here you can see how a simple gui would look like. There are different gui depth
 ### Preparation:
 - Download [Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/GUI_Template.yymp)
 - Import the downloaded package
-- ![Import Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut1.PNG)
+![Import Package](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut1.PNG)
 ---
 ### Setup Template:
 
@@ -71,7 +74,7 @@ button_titleFont = PANEL_TITLE_FONT;
 button_titleColor = c_black;
 ```
 
-8. Add the button to room.
+8. Add the button to the room.
 
 ### Add functionality to the button
 9. At the moment the button has no function. To assign the button some functionality we will add an event handler (a script which gets called, when the button is clicked or released). We can do this by adding **gui_addEventHandler** to the **create event** of **obj_button_1**. Add following code to the inherited create event of obj_button_1.
@@ -95,7 +98,7 @@ gui_inactivePos = [-sprite_width, y];
 ![tut3](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/tut/tut3.PNG)
 
 
-## GUI Elements
+## Available GUI Elements
 
 
 ### General INFO:
@@ -118,6 +121,11 @@ alarm[0] = 1;
 image_speed = 0;
 ```
 > only use the variables at the YOU CAN USE THESE VARIABLES section
+
+For better understanding I have created a class/object diagram:
+
+![class diag](https://github.com/Glim888/GameMaker-GUI-Template/blob/master/res/GUI_Template_classDiag.PNG)
+
 ---
 ### obj_gui:
 Every gui element inherits from **obj_gui**. It provides some **usefull variables**, that you can **change** in the childrens (e.g. obj_button_1).
