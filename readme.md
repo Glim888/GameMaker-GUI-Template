@@ -15,7 +15,7 @@ You can **easily design your own panels via Room Editor!**
 
 Here you can see how a simple gui would look like. There are different gui depths and a collision system, so you can´t click on buttons under the highest gui element!
 
-- ![watch video](https://www.youtube.com/watch?v=lfGCx12zlE8)
+- Video: https://www.youtube.com/watch?v=lfGCx12zlE8)
 
 ![VIDEO](https://img.youtube.com/vi/lfGCx12zlE8/hqdefault.jpg)
 
